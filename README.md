@@ -9,6 +9,12 @@ python configure.py
 make 
 sudo make install
 ```
+
+Then you should copy the file `PyAnalogClock.so` that is inside modules to the side of your script, in my case in the same folder of main.py.
+
+	.
+	├── main.py
+	└── PyAnalogClock.so
        
 Example:
 
