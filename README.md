@@ -7,7 +7,7 @@ Run the following commands:
 ```bash
 python configure.py
 make 
-make install
+sudo make install
 ```
        
 Example:

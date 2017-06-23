@@ -124,10 +124,10 @@ if __name__=="__main__":
         install_dir=dest_pkg_dir
     )
 
-    makefile.extra_defines+=['MYLABEL_LIBRARY','QT_CORE_LIB', 'QT_GUI_LIB', 'QT_WIDGETS_LIB']
+    makefile.extra_defines+=['AnalogClock_LIBRARY','QT_CORE_LIB', 'QT_GUI_LIB', 'QT_WIDGETS_LIB']
     makefile.extra_include_dirs+=[os.path.abspath(inc_dir), qtconfig.QT_INSTALL_HEADERS]
     makefile.extra_lib_dirs+=[qtconfig.QT_INSTALL_LIBS, os.path.join('..','src')]
-    makefile.extra_libs+=['MyLabel']
+    makefile.extra_libs+=['analogclock']
 
     if sys.platform=='darwin':
         makefile.extra_cxxflags+=['-F'+qtconfig.QT_INSTALL_LIBS]        
